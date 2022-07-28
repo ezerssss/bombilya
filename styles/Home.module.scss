@@ -1,0 +1,75 @@
+@import './constants/fonts.scss';
+@import './constants/colors.scss';
+
+.container {
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('/images/homepage/background.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+}
+
+#banner {
+  position: relative;
+  z-index: 0;
+  background-color: $secondary-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5rem 7rem;
+  font-family: 'lemon-milk';
+  text-align: left;
+  p {
+    margin: 0;
+    font-size: 3.3rem;
+  }
+
+  button {
+    font-family: 'lemon-milk';
+    font-size: 1.2rem;
+
+    &:hover {
+      background-color: $secondary-color !important;
+    }
+    &:active {
+      background-color: $tertiary-color !important;
+    }
+  }
+
+  .pic {
+    position: absolute;
+    margin: 0;
+  }
+
+  #pic1 {
+    bottom: -5px;
+    right: 7rem;
+  }
+
+  #pic2 {
+    bottom: -14rem;
+    right: 24rem;
+  }
+}
+
+#home-text {
+  padding: 25rem 0 10rem 7rem;
+  max-width: 50%;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+
+  h1 {
+    font-style: 'lemon-milk-bold';
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  p,
+  b {
+    font-family: 'manrope';
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 2rem 0 0 0;
+    text-align: justify;
+  }
+}
