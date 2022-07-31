@@ -8,9 +8,9 @@ const Banner = () => {
       <p>CONNECTING MINDS,</p>
       <p>SPARKING IDEAS</p>
       <CustomButton
-        width="15rem"
-        height="3rem"
-        margin="1.7rem 0 -1rem 0"
+        width="15vw"
+        height="3vw"
+        margin="1.7vw 0 -1vw 0"
         borderRadius="30px"
         border="0"
         backgroundColor="#F7D00F"
@@ -22,17 +22,15 @@ const Banner = () => {
       <div className={styles.pic} id={styles.pic1}>
         <Image
           src="/images/homepage/screen1.png"
-          width="530vw"
-          height="320vw"
           alt="meeting1"
+          layout="fill"
         />
       </div>
       <div className={styles.pic} id={styles.pic2}>
         <Image
           src="/images/homepage/screen2.png"
-          width="520vw"
-          height="320vw"
           alt="meeting1"
+          layout="fill"
         />
       </div>
     </div>
