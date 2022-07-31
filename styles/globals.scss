@@ -23,7 +23,7 @@ a {
     z-index: 1;
     position: relative;
     padding: 1rem 3rem;
-    background-color: $main-color;
+    background-color: $MAIN_COLOR;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@ a {
 }
 
 .footer {
-    background-color: $main-color;
+    background-color: $MAIN_COLOR;
     display: flex;
     padding: 2vw 10vw;
     opacity: 0.9;

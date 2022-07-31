@@ -1,5 +1,6 @@
 @import './constants/fonts.scss';
 @import './constants/colors.scss';
+@import './constants/dimensions.scss';
 
 .container {
     min-height: 100vh;
@@ -13,7 +14,7 @@
 #banner {
     position: relative;
     z-index: 0;
-    background-color: $secondary-color;
+    background-color: $SECONDARY_COLOR;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5rem 7rem;
     font-family: 'lemon-milk';
@@ -28,10 +29,10 @@
         font-size: 1.4vw;
 
         &:hover {
-            background-color: $secondary-color !important;
+            background-color: $SECONDARY_COLOR !important;
         }
         &:active {
-            background-color: $tertiary-color !important;
+            background-color: $TERTIARY_COLOR !important;
         }
     }
 
@@ -50,6 +51,35 @@
     #pic2 {
         bottom: -14vw;
         right: 24vw;
+    }
+
+    @media screen and (max-width: $MOBILE_DEVICE_WIDTH) {
+        text-align: center;
+
+        p {
+            font-size: 5.5vw;
+        }
+
+        button {
+            width: 17.3vw !important;
+            height: 5.3vw !important;
+            font-size: 2vw;
+        }
+
+        .pic {
+            margin: auto;
+            margin-top: 5vw;
+            position: relative;
+            bottom: 0 !important;
+            right: 0 !important;
+            width: 65vw;
+            height: 40vw;
+        }
+
+        #pic2 {
+            margin-top: 0 !important;
+            top: -2vw;
+        }
     }
 }
 
@@ -73,5 +103,11 @@
         font-weight: 400;
         margin: 2rem 0 0 0;
         text-align: justify;
+    }
+
+    @media screen and (max-width: $MOBILE_DEVICE_WIDTH) {
+        text-align: center;
+        max-width: 100% !important;
+        padding: 6vw 10vw;
     }
 }
